@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon's Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Zain:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
+    <style>
+  
+     body{
+        /* css Reset */
+        margin: 0px;
+        padding: 0px;
+
+        color: white;
+        font-family: "Playfair Display", serif;  /*added online from google font*/
+     }
+
+     /* Styling background video*/
+     .background-clip{
+     position: absolute;
+     right:0;
+     bottom:0;
+     z-index: -1;
+}
+     @media(min-aspect-ratio:16/9){
+     .background-clip{
+     width:100%;
+     height:auto;
+}
+}
+     @media(max-aspect-ratio:16/9){
+     .background-clip{
+     width:auto;
+     height:100%
+    }
+}
+
+    /* Styling left side block(logo) */
+     .left{
+       position:absolute;
+       /* border: 2px solid red; */
+       width:8%;
+       display: inline-block;
+       left:34px;
+       top:16px;
+    }
+    .left img{
+        width:28px;
+        filter:invert(100%);
+        position:relative;
+        left:44px;    
+    }
+    .left div{
+        line-height:15px ;
+        font-size: 14px;
+        text-align:center ;
+        font-weight: bold;
+
+    }
+    
+    .mid{
+        /* border: 2px solid rgb(234, 255, 0); */
+        display:block;
+        width:34%;
+        height:51px;
+        margin:17px auto;
+    }
+    .navbar{
+        display:inline-block;
+     }
+
+     .navbar li{
+        display:inline-block;
+        padding:0px 10px 8px 10px;
+        font-size: 16px;
+     }
+
+     .navbar li a{
+        font-weight: bold;
+        color:white;
+        text-decoration: none;
+     }
+
+     .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color:gray;
+    
+     }
+
+    .right{
+        position: absolute;
+        /* border: 2px solid red;   */
+        display: inline-block;
+        right:34px;
+        top:33px;
+        
+     }
+     .btn{
+        margin: 0px 9px;
+        color:white;
+        background-color:black;
+        padding: 4px 8px;
+        border: 2px solid gray;
+        border-radius: 12px;
+        font-size:13px;
+        font-family: "Playfair Display", serif;
+        font-weight: bold;
+        cursor: pointer;
+     }
+     .btn:hover{
+        background-color:gray;
+     }
+
+     .container{
+     /* border: 2px solid #dfe2df; */
+    margin: 78px 21px;
+    padding: 45px 38px;
+    width: 26%;
+    /* border-radius: 21px; */
+     }
+
+.form-group input{
+    text-align: center;
+    display:block;
+    width:200px;
+    padding:12px;
+    border:2px solid black;
+    margin:7px auto;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family:"Playfair Display", serif; 
+}
+.container h1{
+    text-align: center;
+}
+.container button{
+    display: block;
+    width:23%;
+    margin:auto;
+}
+
+
+     
+    </style>
+    
+</head>
+<body>
+    <video autoplay loop muted plays-inline src="image/bg-vid.mp4" class="background-clip" type="video/mp4"></video>
+    <header class="header">
+
+        <!-- left box for logo -->
+        <div class="left">
+          <img src="image/gym-logo.png" alt="issue uploading">
+          <div>
+            Moon Fitness
+          </div>
+        </div>
+
+        <!-- Mid box for logo -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+        </div>
+
+        <!-- right box for logo -->
+        <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <h1>Join the best gym of Raipur</h1>
+        <form action="no action.js">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your name">
+                <input type="text" placeholder="Enter your Age">
+                <input type="text" placeholder="Enter your Gender">
+                <input type="text" placeholder="Enter your Locality">
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    
+</body>
+</html>
